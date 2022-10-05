@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText:  AeonOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- AeonOS -->
+    <string name="aeonos_title" translatable="false">AeonOS</string>
+    <string name="about_device_name">Device</string>
+
+    <!-- About phone screen, AeonOS version -->
+    <string name="aeonos_version">AeonOS version</string>
+    <string name="aeonos_version_default">Unknown</string>
+
+</resources>
