@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019-2024 AEON
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/miscellaneous_title">
+
+    <PreferenceCategory
+        android:key="miscellaneous_spoofing_category"
+        android:title="@string/miscellaneous_spoofing_category">
+
+        <!-- Component spoofing -->
+        <Preference
+            android:key="spoofing"
+            android:title="@string/spoofing_title"
+            android:summary="@string/spoofing_summary"
+            android:fragment="com.android.settings.fragments.miscellaneous.Spoofing" />
+    </PreferenceCategory>
+</PreferenceScreen>
