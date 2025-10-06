@@ -39,6 +39,15 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AeonOSVersionPreferenceController"/>
 
+    <!-- AeonOS maintainer -->
+    <Preference
+        android:key="aeonos_maintainer"
+        android:title="@string/aeonos_maintainer"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:searchable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.AeonOSMaintainerPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
