@@ -1,0 +1,36 @@
+/*
+ * SPDX-FileCopyrightText: AeonOS Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package com.android.settings.deviceinfo.firmwareversion;
+
+import android.content.Context;
+import android.os.SystemProperties;
+import android.text.TextUtils;
+
+import androidx.annotation.VisibleForTesting;
+
+import com.android.settings.R;
+import com.android.settings.core.BasePreferenceController;
+
+public class AeonOSMaintainerPreferenceController extends BasePreferenceController {
+
+    @VisibleForTesting
+    static final String AEONOS_MAINTAINER_PROPERTY = "ro.aeon.maintainer";
+
+    public AeonOSMaintainerPreferenceController(Context context, String preferenceKey) {
+        super(context, preferenceKey);
+    }
+
+    @Override
+    public int getAvailabilityStatus() {
+        return !TextUtils.isEmpty(SystemProperties.get(AEONOS_MAINTAINER_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+    }
+
+    @Override
+    public CharSequence getSummary() {
+        return SystemProperties.get(AEONOS_MAINTAINER_PROPERTY,
+                mContext.getString(R.string.aeonos_maintainer_default));
+    }
+}

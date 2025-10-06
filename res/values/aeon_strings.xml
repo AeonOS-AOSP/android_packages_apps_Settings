@@ -13,4 +13,8 @@
     <string name="aeonos_version">AeonOS version</string>
     <string name="aeonos_version_default">Unknown</string>
 
+    <!-- About phone screen, AeonOS maintainer -->
+    <string name="aeonos_maintainer">AeonOS Maintainer</string>
+    <string name="aeonos_maintainer_default">Unknown</string>
+
 </resources>
